@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ESN Supplements</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; color: #1a1a2e; background: #f5f7fa; }
+    header { background: #1a1a2e; color: #fff; padding: 40px 20px; text-align: center; }
+    header h1 { font-size: 42px; color: #f9c74f; }
+    header p { margin-top: 8px; font-size: 18px; opacity: .9; }
+    nav { background: #16213e; padding: 14px; text-align: center; }
+    nav a { color: #fff; margin: 0 12px; text-decoration: none; font-weight: bold; }
+    nav a:hover { color: #f9c74f; }
+    main { max-width: 1000px; margin: 30px auto; padding: 0 20px; }
+    section { margin-bottom: 50px; }
+    h2 { color: #16213e; margin-bottom: 20px; font-size: 30px; border-left: 6px solid #f9c74f; padding-left: 12px; }
+    .einleitung p { line-height: 1.6; margin-bottom: 15px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+    .card { background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,.1); }
+    .card img { width: 100%; height: 160px; object-fit: cover; }
+    .card .info { padding: 15px; }
+    .card h3 { color: #16213e; margin-bottom: 6px; }
+    .card p { font-size: 14px; color: #555; }
+    .badge { display: inline-block; background: #f9c74f; color: #16213e; padding: 4px 10px; border-radius: 20px; font-size: 12px; font-weight: bold; margin-bottom: 8px; }
+    table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,.1); }
+    th, td { padding: 12px; text-align: left; }
+    th { background: #16213e; color: #fff; }
+    tr:nth-child(even) { background: #f0f3f8; }
+    .faq-item { background: #fff; border-radius: 12px; padding: 16px; margin-bottom: 15px; box-shadow: 0 2px 8px rgba(0,0,0,.08); }
+    .faq-item h3 { color: #16213e; margin-bottom: 6px; }
+    .faq-item p { color: #555; line-height: 1.5; }
+    form { background: #fff; border-radius: 12px; padding: 25px; box-shadow: 0 4px 12px rgba(0,0,0,.1); }
+    form label { font-weight: bold; }
+    form input, form select, form textarea { width: 100%; padding: 10px; margin: 6px 0 16px; border: 1px solid #ccc; border-radius: 8px; font-size: 14px; }
+    form input[type="submit"], form input[type="reset"] { width: auto; padding: 12px 24px; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; }
+    form input[type="submit"] { background: #f9c74f; color: #16213e; }
+    form input[type="reset"] { background: #ddd; color: #333; }
+    form input[type="submit"]:hover { background: #e0b13f; }
+    .video-link { display: flex; align-items: center; gap: 15px; background: #fff; border-radius: 12px; padding: 15px; margin-bottom: 15px; box-shadow: 0 2px 8px rgba(0,0,0,.08); text-decoration: none; }
+    .video-link:hover { border: 2px solid #f9c74f; }
+    .video-thumb { width: 120px; height: 75px; object-fit: cover; border-radius: 8px; flex-shrink: 0; }
+    .video-info h3 { color: #16213e; margin-bottom: 4px; }
+    .video-info p { color: #555; font-size: 14px; }
+    footer { background: #1a1a2e; color: #fff; text-align: center; padding: 25px; margin-top: 40px; font-size: 14px; }
+    footer a { color: #f9c74f; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>ESN Supplements</h1>
+    <p>Hochwertige Sportnahrung &amp; Nahrungsergänzungsmittel</p>
+  </header>
+
+  <nav>
+    <a href="#einleitung">Einleitung</a>
+    <a href="#produkte">Produkte</a>
+    <a href="#videos">Videos</a>
+    <a href="#tabelle">Einnahme</a>
+    <a href="#faq">FAQ</a>
+    <a href="#kontakt">Kontakt</a>
+  </nav>
+
+  <main>
+
+    <section id="einleitung" class="einleitung">
+      <h2>Über ESN</h2>
+      <p>
+        ESN gehört zu den führenden Herstellern für Sportnahrung in Europa. Die Produkte
+        werden in Deutschland gefertigt, sind qualitätsgeprüft und begleiten Sportler von
+        Hobby bis Profi – für mehr Kraft, Ausdauer und Regeneration.
+      </p>
+      <p>
+        Von Proteinshakes über Pre-Workout-Booster bis zu Vitalstoffen: ESN bietet alles,
+        was dein Training unterstützt.
+      </p>
+    </section>
+
+    <section id="produkte">
+      <h2>Unsere Produkte</h2>
+      <div class="grid">
+
+        <div class="card">
+          <img src="https://picsum.photos/400/200?random=1" alt="Protein">
+          <div class="info"><span class="badge">Proteine</span><h3>ESN Designer Whey</h3><p>Der Allrounder für den Muskelaufbau.</p></div>
+        </div>
+
+        <div class="card">
+          <img src="https://picsum.photos/400/200?random=2" alt="Isoclear">
+          <div class="info"><span class="badge">Proteine</span><h3>ESN Isoclear</h3><p>Klarer Isolateshake für schnellste Versorgung.</p></div>
+        </div>
+
+        <div class="card">
+          <img src="https://picsum.photos/400/200?random=3" alt="Kreatin">
+          <div class="info"><span class="badge">Performance</span><h3>ESN Kreatin</h3><p>Für mehr Kraft und Leistung.</p></div>
+        </div>
+
+        <div class="card">
+          <img src="https://picsum.photos/400/200?random=4" alt="Crank Booster">
+          <div class="info"><span class="badge">Performance</span><h3>ESN Crank Booster</h3><p>Energie, Fokus &amp; Pump vor dem Training.</p></div>
+        </div>
+
+        <div class="card">
+          <img src="https://picsum.photos/400/200?random=5" alt="Athlete Stack">
+          <div class="info"><span class="badge">Health</span><h3>ESN Athlete Stack</h3><p>Vitamine &amp; Mineralstoffe für den Alltag.</p></div>
+        </div>
+
+        <div class="card">
+          <img src="https://picsum.photos/400/200?random=6" alt="Omega 3">
+          <div class="info"><span class="badge">Health</span><h3>ESN Omega-3</h3><p>EPA &amp; DHA für Herz und Gelenke.</p></div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="videos">
+      <h2>Videos</h2>
+
+      <a class="video-link" href="https://www.youtube.com/watch?v=gFWWuAreqaw" target="_blank">
+        <img class="video-thumb" src="https://picsum.photos/120/75?random=11" alt="Video Designer Whey Review">
+        <div class="video-info"><h3>ESN Designer Whey Review – Beste Geschmacksrichtung</h3><p>Ehrlicher Test des beliebten Whey Protein.</p></div>
+      </a>
+
+      <a class="video-link" href="https://www.youtube.com/watch?v=ZlrPdUuLxKI" target="_blank">
+        <img class="video-thumb" src="https://picsum.photos/120/75?random=12" alt="Video Designer Whey Geschmackstest">
+        <div class="video-info"><h3>ESN Designer Whey Geschmackstest</h3><p>Proben getestet + Tipps fürs Kochen.</p></div>
+      </a>
+
+      <a class="video-link" href="https://www.youtube.com/watch?v=nOlidlwAEgk" target="_blank">
+        <img class="video-thumb" src="https://picsum.photos/120/75?random=13" alt="Video Cremiges Whey Protein">
+        <div class="video-info"><h3>Cremiges Whey Protein – bis zu 25 g Eiweiß</h3><p>Offizielles ESN-Video zum Designer Whey.</p></div>
+      </a>
+
+    </section>
+
+    <section id="tabelle">
+      <h2>Einnahmezeiten &amp; Dosierung</h2>
+      <table>
+        <thead><tr><th>Produkt</th><th>Einnahmezeit</th><th>Dosierung</th><th>Einsatzzweck</th></tr></thead>
+        <tbody>
+          <tr><td>Designer Whey</td><td>Morgens oder nach dem Training</td><td>30 g in 300 ml Wasser</td><td>Muskelaufbau</td></tr>
+          <tr><td>Isoclear</td><td>Direkt nach dem Training</td><td>30 g in 300 ml Wasser</td><td>Schnelle Proteinversorgung</td></tr>
+          <tr><td>Kreatin</td><td>Morgens täglich</td><td>3–5 g</td><td>Kraft &amp; Leistung</td></tr>
+          <tr><td>Crank Booster</td><td>20–30 Min. vor dem Training</td><td>1–2 Scoops</td><td>Energie &amp; Fokus</td></tr>
+          <tr><td>Athlete Stack</td><td>Mit einer Mahlzeit</td><td>1 Portion täglich</td><td>Mikronährstoffversorgung</td></tr>
+          <tr><td>Omega-3</td><td>Mit einer fetthaltigen Mahlzeit</td><td>1–2 Kapseln</td><td>Herz, Gehirn, Gelenke</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="faq">
+      <h2>FAQ</h2>
+      <div class="faq-item"><h3>Wie gut ist die Qualität?</h3><p>ESN produziert in Deutschland und nutzt geprüfte, unabhängig getestete Rohstoffe.</p></div>
+      <div class="faq-item"><h3>Wann sollte ich Supplements einnehmen?</h3><p>Das hängt vom Produkt ab – Details siehe Tabelle oben.</p></div>
+      <div class="faq-item"><h3>Ersetzen sie eine ausgewogene Ernährung?</h3><p>Nein, sie sind nur eine Ergänzung zur normalen, gesunden Kost.</p></div>
+    </section>
+
+    <section id="kontakt">
+      <h2>Kontakt</h2>
+      <form action="#" method="post">
+        <label>Name</label>
+        <input type="text" name="name" placeholder="Dein Name" required>
+        <label>E-Mail</label>
+        <input type="email" name="email" placeholder="Deine E-Mail" required>
+        <label>Nachricht</label>
+        <textarea name="nachricht" rows="4" placeholder="Deine Nachricht an uns ..." required></textarea>
+        <input type="submit" value="Absenden">
+        <input type="reset" value="Zurücksetzen">
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 ESN Supplements – Nur zu Demonstrationszwecken. &nbsp; <a href="#">Nach oben</a></p>
+  </footer>
+
+</body>
+</html>
